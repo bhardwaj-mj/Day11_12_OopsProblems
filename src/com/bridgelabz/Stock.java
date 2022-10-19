@@ -4,26 +4,38 @@ public class Stock {
     private String shareName;
     private int numberOfShare;
     private int sharePrice;
+    private int valueOfStock;
+
     public String getShareName() {
         return shareName;
-    }
-    public int getNumberOfShare() {
-        return numberOfShare;
-    }
-    public int getSharePrice() {
-        return sharePrice;
     }
 
     public void setShareName(String shareName) {
         this.shareName = shareName;
     }
 
+    public int getNumberOfShare() {
+        return numberOfShare;
+    }
+
     public void setNumberOfShare(int numberOfShare) {
         this.numberOfShare = numberOfShare;
     }
 
+    public int getSharePrice() {
+        return sharePrice;
+    }
+
     public void setSharePrice(int sharePrice) {
         this.sharePrice = sharePrice;
+    }
+
+    public int getValueOfStock() {
+        return valueOfStock;
+    }
+
+    public void setValueOfStock(int valueOfStock) {
+        this.valueOfStock = valueOfStock;
     }
 
     public Stock() {
@@ -37,10 +49,11 @@ public class Stock {
 
     @Override
     public String toString() {
-        return "Stock{" +
+        return "\nStock{" +
                 "shareName='" + shareName + '\'' +
                 ", numberOfShare=" + numberOfShare +
                 ", sharePrice=" + sharePrice +
+                ", valueOfStock=" + valueOfStock +
                 '}';
     }
 }
